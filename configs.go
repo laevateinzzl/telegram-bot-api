@@ -986,6 +986,7 @@ func (config SetGameScoreConfig) params() (Params, error) {
 
 	params.AddNonZero64("user_id", config.UserID)
 	params.AddNonZero("score", config.Score)
+	params.AddBool("force", config.Force)
 	params.AddBool("disable_edit_message", config.DisableEditMessage)
 
 	if config.InlineMessageID != "" {
